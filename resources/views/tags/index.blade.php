@@ -1,11 +1,15 @@
 @extends('layouts.app')
 @section('content')
-<h1>tags</h1>
-
-<h3>
-@foreach ($tags as $tag)
-    <li>{{$tag}}</li>
-@endforeach
-
-</h3>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>tags</h1>
+            </div>
+            <div class="card-body">
+                @foreach ($tags as $tag)
+                    <li>{{ $tag }}</li>
+                @endforeach
+            </div>
+        </div>
+    </div>
 @endsection
