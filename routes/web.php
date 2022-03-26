@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/investigation/index',[investigationController::class,'index']);
-Route::get('/status/index',[statusController::class,'index']);
+Route::get('/investigation',[investigationController::class,'index']);
+Route::get('/status',[statusController::class,'index']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
