@@ -38,6 +38,49 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <label for="departament" class="col-md-4 col-form-label text-md-end">{{ __('departamento') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="departament" type="departament" class="form-control @error('departament') is-invalid @enderror" name="departament" value="{{ old('departament') }}" required autocomplete="departament">
+
+                                @error('departament')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="web_site" class="col-md-4 col-form-label text-md-end">{{ __('sitio web') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="web_site" type="web_site" class="form-control @error('web_site') is-invalid @enderror" name="web_site" value="{{ old('web_site') }}" required autocomplete="web_site">
+
+                                @error('web_site')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+        
+                    </div>
+                        <div class="row mb-3">
+                            <label for="salary" class="col-md-4 col-form-label text-md-end">{{ __('salario') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="salary" type="salary" class="form-control @error('salary') is-invalid @enderror" name="salary" value="{{ old('salary') }}" required autocomplete="salary">
+
+                                @error('salary')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        
+                           
+
 
                         <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
