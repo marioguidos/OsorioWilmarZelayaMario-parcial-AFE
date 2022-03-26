@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class tags extends Controller
+class investigationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,6 +12,16 @@ class tags extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+    {
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
     {
         //
     }
@@ -34,6 +44,20 @@ class tags extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
+    {
+        $investigaciones=array("Historia del salvador"=>"como se crearon los municipios","eruciones volcanicas"=>"cuando fueron las eurupciones volcanicas mas importantes");
+
+        return view('investigation.index')->with('$investigaciones',$investigaciones);
+        
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
     {
         //
     }

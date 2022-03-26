@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(StatuSeeder::class);
         $this->call(InvestigationSeeder::class);
         $this->call(InvestigationTagsSeeder::class);
+        $this->call(DepartamentSeeder::class);
     }
 }
