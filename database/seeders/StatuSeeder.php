@@ -17,7 +17,7 @@ class StatuSeeder extends Seeder
     {
         $status = [
             ['name' =>  'Active'],
-            ['name' =>  'Deactive'],
+            ['name' =>  'Desactive'],
             ['name' =>  'Empty'],
             ['name' =>  'Full'],
         ];

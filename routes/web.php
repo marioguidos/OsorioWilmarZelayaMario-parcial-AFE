@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\investigationController;
 use App\Http\Controllers\investigations;
+use App\Http\Controllers\statusController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +23,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/investigation/index',[investigationController::class,'show']);
+Route::get('/investigation/index',[investigationController::class,'index']);
+Route::get('/status/index',[statusController::class,'index']);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

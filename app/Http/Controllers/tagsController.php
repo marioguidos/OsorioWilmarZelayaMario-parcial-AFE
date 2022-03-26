@@ -13,7 +13,11 @@ class tagsController extends Controller
      */
     public function index()
     {
-        //
+        $tags=[
+            '1'=>'historia','Descripcion'=>'historia de todos los paises',
+            '2'=>'capitalismo','Descripcion'=>'Descripcion del capitalismo'
+        ];
+        return view('tags.index')->with('tags',$tags);
     }
 
     /**

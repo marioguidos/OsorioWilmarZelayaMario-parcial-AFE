@@ -13,7 +13,12 @@ class statusController extends Controller
      */
     public function index()
     {
-        //
+        $tags=[
+            '1'=>'active',
+            '2'=>'desactive',
+            '3'=>'Empty'
+        ];
+        return view('tags.index')->with('tags',$tags);
     }
 
     /**

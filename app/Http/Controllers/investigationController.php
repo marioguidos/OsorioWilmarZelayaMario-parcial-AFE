@@ -13,7 +13,12 @@ class investigationController extends Controller
      */
     public function index()
     {
-        //
+        $investigaciones=[
+            'Historia del salvador'=>'como se crearon los municipios',
+            'eruciones volcanicas'=>"cuando fueron las erupciones volcanicas mas importantes"
+        ];
+
+        return view('investigation.index')->with('investigaciones',$investigaciones);
     }
 
     /**
@@ -45,9 +50,7 @@ class investigationController extends Controller
      */
     public function show($id)
     {
-        $investigaciones=array("Historia del salvador"=>"como se crearon los municipios","eruciones volcanicas"=>"cuando fueron las eurupciones volcanicas mas importantes");
-
-        return view('investigation.index')->with('$investigaciones',$investigaciones);
+        
         
     }
 
